@@ -33,7 +33,6 @@ def get_tokens(url_response):
     # Remove words that contain digit from the text
     text_only = ' '.join(s for s in all_text.split() if not any(c.isdigit() for c in s))
 
-    print(text_only)
     # remove numbers
     text_no_num = re.sub(r'\d+', '', text_only)
 
