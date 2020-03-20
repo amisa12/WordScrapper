@@ -18,3 +18,8 @@ $ python3.7
 
 To get the package to download check the error message 
 ```
+
+### How to ensure that the graph shows
+```python
+$ sudo apt-get install python3-tk
+```
