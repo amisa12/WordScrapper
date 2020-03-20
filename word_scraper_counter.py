@@ -18,8 +18,10 @@ response = requests.get(url)
 
 soup = BeautifulSoup(response.text, "html.parser")
 
+# Define a regex
 defined_regex = '\w+'
 
+# Get all token as specified in the regex from the soup
 tokens = re.findall(defined_regex, soup.text)
 
 # Get a list of all possible english words
