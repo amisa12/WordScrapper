@@ -24,8 +24,11 @@ defined_regex = '\w+'
 # Get all token as specified in the regex from the soup
 tokens = re.findall(defined_regex, soup.text)
 
-# Get a list of all possible english words
-english_words = set(nltk.corpus.words.words())
+# Get word count frequency
+word_count = Counter(words)
+
+# Get most common 100 words
+most_common_100_words = word_count.most_common(100)
 
 # Get word type
 words_type = nltk.pos_tag(tokens)
@@ -41,15 +44,14 @@ for i in words_type:
     table.add_row([i[0], type])
 
 print(table)
+
+# Get a list of all possible english words
+english_words = set(nltk.corpus.words.words())
+
 for word in tokens:
     if word in english_words:
         words.append(word.lower())
 
-# Get word count
-word_count = Counter(words)
-
-# Get most common 100 words
-most_common_100_words = word_count.most_common(100)
 sns.set()
 
 # Create freq dist
