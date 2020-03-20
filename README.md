@@ -9,3 +9,12 @@ $ pip install -r requirements.txt
 
 $ python3 word_scraper_counter.py 
 ```
+
+### How to install nltk package
+```python3.7
+$ python3.7
+>>> import nltk
+>>> nltk.download('The package to download') or nltk.download()
+
+To get the package to download check the error message 
+```
