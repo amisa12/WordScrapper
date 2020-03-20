@@ -35,9 +35,9 @@ for i in words_type:
     if i[1] == 'NN':
         type = 'Noun'
     elif i[1] == 'VBP':
-        type == 'Verb'
+        type = 'Verb'
     else:
-        type == 'other'
+        type = 'other'
     table.add_row([i[0], type])
 
 print(table)
