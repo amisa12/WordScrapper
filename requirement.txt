@@ -2,3 +2,5 @@ requests
 bs4
 matplotlib
 seaborn
+nltk
+prettytable
