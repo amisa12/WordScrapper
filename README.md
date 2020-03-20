@@ -1,6 +1,7 @@
 ## How to run the project
 
-``` virtualenv -p python3.7 venv
+``` 
+    virtualenv -p python3.7 venv
 
     source venv/bin/activate
     
